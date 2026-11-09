@@ -511,12 +511,12 @@ h2 {
 .tabs,
 .search {
   width: 100%;
-  max-width: 360px;
   min-width: 0;
   height: 36px;
 }
 .tabs {
   display: flex;
+  max-width: 360px;
   justify-self: start;
   justify-content: space-between;
   overflow-x: auto;
@@ -554,6 +554,7 @@ h2 {
 }
 .search {
   display: flex;
+  max-width: 242px;
   justify-self: end;
   align-items: center;
   border: 1px solid #e5e9e2;
