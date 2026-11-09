@@ -1194,13 +1194,6 @@ footer > span:first-child {
   .page-heading h1 {
     font-size: 25px;
   }
-  .table-toolbar {
-    flex-wrap: wrap;
-    gap: 13px;
-  }
-  .search {
-    width: 100%;
-  }
   .stat-card {
     padding: 15px;
   }
@@ -1393,7 +1386,12 @@ footer > span:first-child {
     font-size: 12px;
   }
   .table-toolbar {
+    flex-wrap: wrap;
+    gap: 13px;
     padding: 0 12px 15px;
+  }
+  .search {
+    width: 100%;
   }
   .date-range-toolbar {
     padding: 0 12px 15px;
