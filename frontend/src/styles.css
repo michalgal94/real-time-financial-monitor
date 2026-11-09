@@ -502,20 +502,23 @@ h2 {
 }
 .table-toolbar {
   --toolbar-gap: 18px;
-  --search-min-width: 120px;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: var(--toolbar-gap);
   padding: 0 23px 20px;
   align-items: center;
 }
+.tabs,
+.search {
+  width: 100%;
+  max-width: 360px;
+  min-width: 0;
+  height: 36px;
+}
 .tabs {
   display: flex;
-  flex: 0 0 auto;
-  min-width: 0;
-  max-width: calc(100% - var(--search-min-width) - var(--toolbar-gap));
-  height: 36px;
+  justify-self: start;
+  justify-content: space-between;
   overflow-x: auto;
   scrollbar-width: none;
   gap: 3px;
@@ -551,15 +554,13 @@ h2 {
 }
 .search {
   display: flex;
-  min-width: var(--search-min-width);
-  height: 36px;
+  justify-self: end;
   align-items: center;
   border: 1px solid #e5e9e2;
   border-radius: 5px;
   padding: 9px 10px;
   gap: 8px;
   color: #9ba796;
-  width: 242px;
 }
 .search input {
   border: none;
