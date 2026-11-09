@@ -501,21 +501,34 @@ h2 {
   height: 5px;
 }
 .table-toolbar {
+  --toolbar-gap: 18px;
+  --search-min-width: 120px;
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
-  gap: 18px;
+  gap: var(--toolbar-gap);
   padding: 0 23px 20px;
   align-items: center;
 }
 .tabs {
   display: flex;
+  flex: 0 0 auto;
+  min-width: 0;
+  max-width: calc(100% - var(--search-min-width) - var(--toolbar-gap));
+  height: 36px;
+  overflow-x: auto;
+  scrollbar-width: none;
   gap: 3px;
   padding: 4px;
   background: #f4f6f2;
   border-radius: 6px;
   white-space: nowrap;
 }
+.tabs::-webkit-scrollbar {
+  display: none;
+}
 .tabs button {
+  flex-shrink: 0;
   border: none;
   background: transparent;
   color: #87917f;
@@ -538,6 +551,8 @@ h2 {
 }
 .search {
   display: flex;
+  min-width: var(--search-min-width);
+  height: 36px;
   align-items: center;
   border: 1px solid #e5e9e2;
   border-radius: 5px;
@@ -1386,19 +1401,14 @@ footer > span:first-child {
     font-size: 12px;
   }
   .table-toolbar {
-    flex-wrap: wrap;
-    gap: 13px;
+    --toolbar-gap: 8px;
     padding: 0 12px 15px;
-  }
-  .search {
-    width: 100%;
   }
   .date-range-toolbar {
     padding: 0 12px 15px;
   }
   .tabs {
-    width: 100%;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
   .tabs button {
     padding: 8px 6px;
