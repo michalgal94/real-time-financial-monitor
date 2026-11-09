@@ -1,0 +1,14 @@
+**/bin/
+**/obj/
+**/node_modules/
+**/dist/
+**/test-results/
+**/playwright-report/
+.vs/
+.idea/
+.env
+*.user
+*.zip
+*.tsbuildinfo
+artifacts/
+mid-fullstack.pdf
