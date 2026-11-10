@@ -21,7 +21,7 @@ test("empty dashboard connects over a real websocket and works on mobile", async
   });
   await page.setViewportSize({ width: 390, height: 844 });
   await expect(
-    page.getByRole("heading", { name: "Every transaction. In view." }),
+    page.getByRole("heading", { name: "Live Financial Monitor" }),
   ).toBeVisible();
   expect(
     await page.evaluate(

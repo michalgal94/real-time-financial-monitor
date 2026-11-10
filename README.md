@@ -378,9 +378,3 @@ Keep deployment credentials and TLS settings in configuration or secrets, rather
 - **No data after restart:** expected in Memory mode. Redis mode depends on the Redis instance's persistence and volume.
 - **No animation:** initial snapshots do not animate, and reduced motion disables animation. Keep **All transactions** selected to watch a Pending row change.
 - **Fonts dont load:** the UI falls back to system fonts.
-
-## References
-
-- [SignalR Redis backplane](https://learn.microsoft.com/aspnet/core/signalr/redis-backplane)
-- [SignalR hosting and scale-out](https://learn.microsoft.com/aspnet/core/signalr/scale)
-- [Redis Lua scripting](https://redis.io/docs/latest/develop/programmability/eval-intro/)

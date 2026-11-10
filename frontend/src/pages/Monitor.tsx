@@ -72,7 +72,7 @@ export function Monitor() {
       </div>
       <div className="page-heading">
         <div>
-          <h1>Every transaction. In view.</h1>
+          <h1>Live Financial Monitor</h1>
           <p>Your live pulse on financial activity, all in one place.</p>
         </div>
         <NavLink className="button primary" to="/add">

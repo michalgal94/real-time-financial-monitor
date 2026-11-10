@@ -167,7 +167,7 @@ export function Simulator() {
       </div>
       <div className="page-heading">
         <div>
-          <h1>Bring your monitor to life.</h1>
+          <h1>Transaction Simulator</h1>
           <p>
             Create a transaction or send a burst of activity to test the flow.
           </p>
@@ -262,7 +262,7 @@ export function Simulator() {
           </span>
           <span className="mini-label">PUT IT TO THE TEST</span>
           <h2>
-            A little activity.
+            A little activity,
             <br />
             Or a hundred at once.
           </h2>
