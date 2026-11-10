@@ -512,10 +512,10 @@ h2 {
 .search {
   width: 100%;
   min-width: 0;
-  height: 36px;
 }
 .tabs {
   display: flex;
+  height: 36px;
   max-width: 360px;
   justify-self: start;
   justify-content: space-between;
@@ -555,11 +555,12 @@ h2 {
 .search {
   display: flex;
   max-width: 242px;
+  height: 32px;
   justify-self: end;
   align-items: center;
   border: 1px solid #e5e9e2;
   border-radius: 5px;
-  padding: 9px 10px;
+  padding: 6px 10px;
   gap: 8px;
   color: #9ba796;
 }
